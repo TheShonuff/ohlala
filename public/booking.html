@@ -68,7 +68,7 @@
         <div class="col">
           <div class="section-header">
             <h3 class="text-center display-3">
-              Wedding<br />
+              <span style="color: rgb(103, 55, 180)">Wedding</span><br />
               Packages
             </h3>
           </div>
@@ -194,7 +194,7 @@
         <div class="col d-flex justify-content-center">
           <div class="section-header">
             <h3 class="text-center display-3">
-              Regular<br />
+              <span style="color: rgb(103, 55, 180)">Regular</span><br />
               Sessions
             </h3>
           </div>
@@ -469,7 +469,7 @@
             </div>
           </div>
         </div>
-        <div class="col"></div>
+        <!-- <div class="col"></div> -->
       </div>
     </div>
     <!-- MODAL -->
@@ -503,30 +503,26 @@
             <div class="modal-body">
               <!-- MODAL FORM -->
 
-              <span class="required">* Required</span>
+              <span class="required" style="color: red">* Required</span>
               <div class="form-group">
                 <label for="name" class="col-sm-3 control-label">
-                  <span class="required">*</span> Name:</label
+                  <span class="required" style="color: red">*</span
+                  ><span style="color: #fff"> Name:</span></label
                 >
                 <div class="col-sm-9">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="First & Last"
-                    required
-                  />
+                  <input type="text" class="form-control opacity-75 id="name"
+                  name="name" placeholder="First & Last" required />
                 </div>
               </div>
               <div class="form-group">
                 <label for="subject" class="col-sm-3 control-label">
-                  <span class="required">*</span> Subject:</label
+                  <span class="required" style="color: red">*</span
+                  ><span style="color: #fff"> Subject:</span></label
                 >
                 <div class="col-sm-9">
                   <input
                     type="subject"
-                    class="form-control"
+                    class="form-control opacity-75"
                     id="subject"
                     name="subject"
                     placeholder="Package Selected"
@@ -536,12 +532,13 @@
               </div>
               <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">
-                  <span class="required">*</span> Email:
+                  <span class="required" style="color: red">*</span
+                  ><span style="color: #fff">Email:</span>
                 </label>
-                <div class="col-sm-9 opacity-50">
+                <div class="col-sm-9">
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control opacity-75"
                     id="email"
                     name="email"
                     placeholder="you@domain.com"
@@ -551,14 +548,15 @@
               </div>
               <div class="form-group">
                 <label for="message" class="col-sm-3 control-label">
-                  <span class="required">*</span> Message:</label
+                  <span class="required" style="color: red">*</span
+                  ><span style="color: #fff"> Message:</span></label
                 >
-                <div class="col-sm-9 opacity-50">
+                <div class="col-sm-9">
                   <textarea
                     name="message"
                     rows="4"
                     required
-                    class="form-control"
+                    class="form-control opacity-75"
                     id="message"
                     placeholder="Comments"
                   ></textarea>
@@ -566,13 +564,14 @@
               </div>
               <div class="form-group">
                 <label for="human" class="col-sm-3 control-label">
-                  <span class="required">*</span> Human or Bot:</label
+                  <span class="required" style="color: red">*</span>
+                  <span style="color: #fff">Human or Bot:</span></label
                 >
-                <div class="col-sm-4 opacity-50">
+                <div class="col-sm-4">
                   <h3 class="human">Six + 6 = ?</h3>
                   <input
                     type="number"
-                    class="form-control"
+                    class="form-control opacity-75"
                     id="human"
                     name="human"
                     placeholder="Enter sum in digits"
