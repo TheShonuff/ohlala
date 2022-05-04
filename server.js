@@ -1,8 +1,8 @@
 const express = require("express");
-
 const path = require("path");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
+
 require("dotenv").config();
 
 const app = express();
@@ -13,6 +13,9 @@ app.route("/").get(function (req, res) {
 const PORT = process.env.PORT || 8083;
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use(
+  express.static(path.join(__dirname, "node_modules/masonry-layout/dist"))
+);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
