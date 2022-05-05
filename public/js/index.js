@@ -9,7 +9,8 @@ window.onload = () => {
     itemSelector: ".grid-item",
     columnWidth: ".grid-sizer",
     gutter: 10,
-    percentPosition: true,
+    // percentPosition: true,
+    fitWidth: true,
   });
 
   masonry.on("layoutComplete", () => console.log("Layout Complete"));

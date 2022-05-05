@@ -64,6 +64,10 @@ body {
   width: 22rem;
   margin-bottom: 10px;
 }
+
+.grid-item img {
+  max-width: 100%;
+}
 .grid-item--width2 {
   width: 5rem;
 }
