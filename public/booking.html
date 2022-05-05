@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- calendly widget css -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <!-- calendly widget css end -->
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -585,6 +591,13 @@
               <!-- MODAL FORM END -->
             </div>
             <div class="modal-footer">
+              <!-- Calendly Button -->
+              <button
+                class="btn btn-outline-dark mb-2 sub"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jirvine124/30min'});return false;"
+              >
+                Schedule
+              </button>
               <button
                 type="button"
                 class="btn btn-secondary"
@@ -614,5 +627,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/app.js"></script>
+
+    <!-- Calendly Script -->
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <!-- Calendly Script end -->
   </body>
 </html>
